@@ -1,14 +1,14 @@
-function searchAnimal() {
+function searchFruit() {
     let input = document.getElementById("search-bar").value;
     input = input.toLowerCase();
-    let animal = document.getElementsByClassName("animals");
+    let fruit = document.getElementsByClassName("fruits");
 
-    for( i=0; i < animal.length; i++) {
-        if (!animal[i].innerHTML.toLowerCase().includes(input)) {
-            animal[i].style.display = "none";
+    for( i=0; i < fruit.length; i++) {
+        if (!fruit[i].innerHTML.toLowerCase().includes(input)) {
+            fruit[i].style.display = "none";
         }
         else {
-            animal[i].style.display = "list-item";
+            fruit[i].style.display = "list-item";
         }
     }
 }
